@@ -1,7 +1,8 @@
+// client/src/state/index.js
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  mode: "dark",
+  mode: "dark", // Set the initial mode to dark
 };
 
 export const globalSlice = createSlice({

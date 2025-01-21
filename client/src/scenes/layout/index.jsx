@@ -1,12 +1,17 @@
-import { useState } from "react";
-import { Box, useMediaQuery } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import { Outlet } from "react-router-dom";
-import { useSelector } from "react-redux";
 import Navbar from "components/Navbar";
-
 const Layout = () => {
+  const theme = useTheme();
+
   return (
-    <Box width="100%" height="100%">
+    <Box
+      width="100%"
+      height="100%"
+      sx={{
+        backgroundColor: theme.palette.mode === "dark" ? "#181C3B" : "#ffffff",
+      }}
+    >
       <Box>
         <Navbar />
         <Outlet />
