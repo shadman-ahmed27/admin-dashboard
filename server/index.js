@@ -1,14 +1,18 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import mongoose from 'mongoose';
-import cors from 'cors';
-import dotenv from 'dotenv';
-import helmet from 'helmet'
-import morgan from 'morgan';
-import clientRoutes from "./routes/client.js"
-import generalRoutes from "./routes/general.js"
-import managementRoutes from "./routes/management.js"
-import salesRoutes from "./routes/sales.js"
+import express from "express";
+import bodyParser from "body-parser";
+import mongoose from "mongoose";
+import cors from "cors";
+import dotenv from "dotenv";
+import helmet from "helmet";
+import morgan from "morgan";
+import clientRoutes from "./routes/client.js";
+import generalRoutes from "./routes/general.js";
+import managementRoutes from "./routes/management.js";
+import salesRoutes from "./routes/sales.js";
+
+// data imports
+import User from "./modelsMongoDB/User.js";
+import { dataUser } from "./data/index.js";
 
 /* CONFIGURATIONS */
 dotenv.config();
@@ -36,5 +40,8 @@ mongoose
   })
   .then(() => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
-      })
+
+    // ONLY ADD DATA ONE TIME
+    User.insertMany(dataUser);
+  })
   .catch((error) => console.log(`${error} did not connect`));
