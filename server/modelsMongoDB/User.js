@@ -23,7 +23,7 @@ const userSchema = new mongoose.Schema(
     city: String,
     state: String,
     country: String,
-    phoneNumer: String,
+    phoneNumber: String, // Corrected typo from phoneNumer to phoneNumber
     transactions: Array,
     role: {
       type: String,
@@ -31,7 +31,7 @@ const userSchema = new mongoose.Schema(
       default: "admin",
     },
   },
-  { timestamps: true } //auto create and update a date
+  { timestamps: true } // Automatically create and update timestamps
 );
 
 const User = mongoose.model("User", userSchema);
