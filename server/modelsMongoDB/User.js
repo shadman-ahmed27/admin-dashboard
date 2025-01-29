@@ -29,7 +29,8 @@ const userSchema = new mongoose.Schema(
     city: String,
     state: String,
     country: String,
-    phoneNumber: String, // Corrected typo from phoneNumer to phoneNumber
+    occupation: String,
+    phoneNumber: String,
     transactions: Array,
     role: {
       type: String,
