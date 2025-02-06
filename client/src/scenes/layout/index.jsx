@@ -1,4 +1,4 @@
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import { Box, useTheme, useMediaQuery } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import Navbar from "components/Navbar";

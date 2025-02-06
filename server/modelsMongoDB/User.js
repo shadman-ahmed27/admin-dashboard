@@ -2,12 +2,13 @@ import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema(
   {
-    // if you want id field for more security
+    /* if you want id field for more security */
     // _id: {
     //   type: mongoose.Schema.Types.ObjectId,
     //   required: true,
     //   auto: false, // Ensure that Mongoose does not auto-generate the _id field
-    // }, */
+    // }, 
+
     name: {
       type: String,
       required: true,

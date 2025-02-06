@@ -1,13 +1,13 @@
-import Product from "../modelsMongoDB/Product";
-import ProductStat from "../modelsMongoDB/ProductStat";
+import Product from "../modelsMongoDB/Product.js";
+import ProductStat from "../modelsMongoDB/ProductStat.js";
 
 export const getProducts = async (req, res) => {
   try {
     const products = await Product.find();
 
-    const productWithStats = await Promise.all(
+    const productsWithStats = await Promise.all(
       products.map(async (product) => {
-        const stat = await ProductStat.findOne({
+        const stat = await ProductStat.find({
           productId: product._id,
         });
         return {
@@ -16,7 +16,8 @@ export const getProducts = async (req, res) => {
         };
       })
     );
-    res.status(200).json(productWithStats);
+
+    res.status(200).json(productsWithStats);
   } catch (error) {
     res.status(404).json({ message: error.message });
   }
