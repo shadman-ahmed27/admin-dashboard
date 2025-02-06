@@ -12,7 +12,9 @@ import salesRoutes from "./routes/sales.js";
 
 // data imports
 import User from "./modelsMongoDB/User.js";
-import { dataUser } from "./data/index.js";
+import Product from "./modelsMongoDB/Product.js";
+import ProductStat from "./modelsMongoDB/ProductStat.js";
+import { dataUser, dataProduct, dataProductStat } from "./data/index.js";
 
 /* CONFIGURATIONS */
 dotenv.config();
@@ -40,7 +42,10 @@ mongoose
   })
   .then(() => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
-    // ADD ONLY ONCE
+
+    /* ONLY ADD DATA ONE TIME */
+    // Product.insertMany(dataProduct);
+    // ProductStat.insertMany(dataProductStat);
     // User.insertMany(dataUser);
   })
   .catch((error) => console.log(`${error} did not connect`));
