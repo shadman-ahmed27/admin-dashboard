@@ -16,12 +16,14 @@ import Product from "./modelsMongoDB/Product.js";
 import ProductStat from "./modelsMongoDB/ProductStat.js";
 import Transaction from "./modelsMongoDB/Transaction.js";
 import OverallStat from "./modelsMongoDB/OverallStat.js";
+import AffiliateStat from "./modelsMongoDB/AffiliateStat.js";
 import {
   dataUser,
   dataProduct,
   dataProductStat,
   dataTransaction,
   dataOverallStat,
+  dataAffiliateStat,
 } from "./data/index.js";
 
 /* CONFIGURATIONS */
@@ -52,10 +54,11 @@ mongoose
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
     /* ONLY ADD DATA ONE TIME */
-    //   OverallStat.insertMany(dataOverallStat);
+    //   User.insertMany(dataUser);
     //   Product.insertMany(dataProduct);
     //   ProductStat.insertMany(dataProductStat);
-    //   User.insertMany(dataUser);
     //   Transaction.insertMany(dataTransaction);
+    //   OverallStat.insertMany(dataOverallStat);
+    //   AffiliateStat.insertMany(dataAffiliateStat);
   })
   .catch((error) => console.log(`${error} did not connect`));
