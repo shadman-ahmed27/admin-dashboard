@@ -52,10 +52,10 @@ mongoose
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
     /* ONLY ADD DATA ONE TIME */
-    // OverallStat.insertMany(dataOverallStat);
-    // Product.insertMany(dataProduct);
-    // ProductStat.insertMany(dataProductStat);
-    // User.insertMany(dataUser);
-    // Transaction.insertMany(dataTransaction);
+    //   OverallStat.insertMany(dataOverallStat);
+    //   Product.insertMany(dataProduct);
+    //   ProductStat.insertMany(dataProductStat);
+    //   User.insertMany(dataUser);
+    //   Transaction.insertMany(dataTransaction);
   })
   .catch((error) => console.log(`${error} did not connect`));
