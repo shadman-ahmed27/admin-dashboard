@@ -1,0 +1,54 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.11">
+  <diagram name="Page-1" id="b520641d-4fe3-3701-9064-5fc419738815">
+    <mxGraphModel dx="858" dy="1097" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MoIbv0tTHDZshOK22oh0-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="MoIbv0tTHDZshOK22oh0-2" target="MoIbv0tTHDZshOK22oh0-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="698" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MoIbv0tTHDZshOK22oh0-2" value="Client / Frontend" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="600" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MoIbv0tTHDZshOK22oh0-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MoIbv0tTHDZshOK22oh0-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MoIbv0tTHDZshOK22oh0-4" value="Server / Backend&lt;br&gt;Mongo DB" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="638" y="70" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MoIbv0tTHDZshOK22oh0-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="MoIbv0tTHDZshOK22oh0-5" target="MoIbv0tTHDZshOK22oh0-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="698" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MoIbv0tTHDZshOK22oh0-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MoIbv0tTHDZshOK22oh0-5" target="MoIbv0tTHDZshOK22oh0-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MoIbv0tTHDZshOK22oh0-5" value="Node / Express" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MoIbv0tTHDZshOK22oh0-17" value="HTTP Request" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="650" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MoIbv0tTHDZshOK22oh0-21" value="SQL statement" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="710" y="238" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MoIbv0tTHDZshOK22oh0-22" value="Data" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="550" y="208" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MoIbv0tTHDZshOK22oh0-23" value="Formatted Data" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="355" y="358" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MoIbv0tTHDZshOK22oh0-24" value="Step 1.) Client sends HTTP request to Express&lt;div&gt;Step 2.) Node uses SQL statement to call data from the Mongo database&lt;/div&gt;&lt;div&gt;Step 3.) The data sent back into node to be formatted correctly to send to different locations in front end&lt;/div&gt;&lt;div&gt;Step 4.) The data is manipulated and visualized into the user interface&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="20" width="570" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
